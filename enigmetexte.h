@@ -14,14 +14,13 @@ typedef struct enigme
     int InputUser, solution;
 } enigme;
 
-enigme Init_Enigme();
-int nblignes(char filename[]);
-enigme Generate_Enigme();
+void InitEnigme(enigme *e, char *nomfichier);
 
-int Resolution(enigme e,int x);
 void afficher_resultat (SDL_Surface * ecran,enigme e,int x);
 
-void affichage_Enigme(enigme e , SDL_Surface *ecran);
+void affichagerEnigme(enigme e , SDL_Surface *ecran);
+
+void animer(enigme * e)
 
 
 
