@@ -15,12 +15,11 @@ typedef struct
 	
 }Ennemi;
 
-void initEnnemi(Ennemi*e)
-void libererLevel1(Ennemi lvl1);
-void afficherEnnemi(Ennemi e, SDL_Surface * screen)
-void animerEnnemi( Ennemi * e)
-void deplacer( Ennemi * e)
-int collisionBB( personne p, Ennemi e)
-void deplacerIA( Ennemi * e, SDL_Rect posPerso)
+void initEnnemi(Ennemi*e);
+void afficherEnnemi(Ennemi e, SDL_Surface * screen);
+void animerEnnemi( Ennemi * e);
+void deplacer( Ennemi * e);
+int collisionBB( personne p, Ennemi e);
+void deplacerIA( Ennemi * e, SDL_Rect posPerso);
 
 #endif // ES_H_INCLUDED
