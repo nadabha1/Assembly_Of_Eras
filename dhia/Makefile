@@ -3,7 +3,7 @@ prog: code.o main.o
  
 main.o: main.c
 	gcc -c main.c -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf -g
-kouki_lot3.o: code.c
+code.o: code.c
 	gcc -c code.c -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf -g
 clean:
 	rm -fr prog
